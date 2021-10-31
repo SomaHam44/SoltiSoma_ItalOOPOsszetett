@@ -4,9 +4,9 @@ public abstract class AlkoholosItal extends Ital implements Alkoholos{
     private String iz;
     private double alkoholTartalom;
 
-    public AlkoholosItal(String iz, double a) {
+    public AlkoholosItal(String iz, double alkoholTartalom) {
         this.iz = iz;
-        this.alkoholTartalom = a;
+        this.alkoholTartalom = alkoholTartalom;
     }
 
     @Override
@@ -21,6 +21,6 @@ public abstract class AlkoholosItal extends Ital implements Alkoholos{
 
     @Override
     public String toString() {
-        return String.format("Alkoholos ital: %s ízű, alkohol tartalma: %f", this.iz, this.alkoholTartalom);
+        return String.format("%s ízű, alkohol tartalma: %f", this.iz, this.alkoholTartalom);
     }
 }

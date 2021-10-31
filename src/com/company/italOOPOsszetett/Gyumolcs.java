@@ -21,4 +21,6 @@ public class Gyumolcs {
     public String toString() {
         return String.format("Gyümölcs: %s - íz: %s", this.fajta, this.iz);
     }
+
+
 }
